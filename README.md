@@ -6,4 +6,4 @@ Este GIT sirve de repositorio para los ejemplos de la charla de iniciación a Ku
 
 En el se incluirá una pequeña aplicación en node.js que generará contenedores manejados con kubernetes y ejemplos de ficheros .yml de definición de pods, servicios, deployments, etcétera.
 
-La ejecución se realizará en minikube ([https://github.com/kubernetes/minikub](https://github.com/kubernetes/minikub))
+La ejecución se realizará en minikube ([https://github.com/kubernetes/minikube](https://github.com/kubernetes/minikube))
