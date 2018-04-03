@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-node
+  labels:
+    app: hello-node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-node
+  template:
+    metadata:
+      labels:
+        app: hello-node
+    spec:
+      containers:
+      - name: hello-node
+        image: hello-node:v3
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: http-storage
+          mountPath: /http
+
+      volumes:
+      - name: http-storage
+        emptyDir: {}
